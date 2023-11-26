@@ -1,0 +1,25 @@
+@media (min-width: 768px) {
+    h3 {
+        font-size: 35px;
+    }
+
+    .circle-start {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 575px) {
+    h1 {
+        font-size: 75px !important;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    .circle-start {
+        width: 160px;
+        height: 160px;
+    }
+}

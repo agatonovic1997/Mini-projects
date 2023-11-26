@@ -1,0 +1,137 @@
+body {
+    overflow-x: hidden;
+    user-select: none;
+}
+
+.container-fluid {
+    background: linear-gradient(to left, $light-blue, $green-color);
+    background-repeat: no-repeat;
+    height: 100vh !important;
+    width: 100vw !important;
+}
+
+h1 {
+    font-family: $main-font;
+    font-weight: 700 !important;
+    font-size: 115px !important;
+    color: $dark-purple;
+    animation: pulse 2s infinite;
+
+}
+
+.e {
+    transition: transform 0.5s ease-in-out;
+    transform: rotate(1080deg);
+}
+
+.circle-start {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    background-color: $white-color;
+    transition: 0.8s all ease-in-out;
+
+    &:hover {
+        background-color: $light-blue !important;
+        box-shadow: 0 0 8px $dark-purple;
+        cursor: pointer;
+    }
+
+    h2 {
+        color: $black-color;
+        font-family: $other-font;
+        font-size: 45px;
+        transition: 0.8s all ease-in-out;
+        position: relative;
+
+        &:hover {
+            text-shadow: 0 0 10px $yellow-color;
+        }
+
+        &:active {
+            top: 3px;
+            left: 3px;
+        }
+    }
+}
+
+h3 {
+    color: $dark-purple;
+    font-family: $main-font;
+    font-weight: 500 !important;
+    font-size: 50px !important;
+}
+
+
+.g {
+    border: 3px solid $dark-purple;
+}
+
+.time-line {
+    height: 6px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 0 8px #4c75af;
+    position: relative;
+    overflow: hidden;
+}
+
+#progress-bar {
+    width: 0%;
+    height: 100%;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    background-color: $light-blue;
+    position: absolute;
+    transition: width 0.5s ease;
+    animation: progressAnimation linear;
+}
+
+
+h4 {
+    color: $dark-blue;
+    font-family: $main-font;
+    font-size: 50px !important;
+    font-weight: 800 !important;
+}
+
+h5 {
+    font-size: 25px !important;
+    font-family: $other-font;
+    font-weight: 900;
+    color: $dark-purple;
+}
+
+
+.box-left,
+.box-play,
+.box-right {
+    background-color: $white-color;
+    padding: 15px;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    box-shadow: 0 0 8px $dark-purple;
+    border: 5px solid $gray-color;
+    cursor: pointer;
+    position: relative;
+
+    &:active {
+        top: 2px;
+        left: 2px;
+    }
+
+}
+
+.start-class {
+    background-color: $green-color !important;
+}
+
+.stop-class {
+    background-color: $red-color !important;
+}
+
+.blue-class {
+    background-color: $light-blue !important;
+}

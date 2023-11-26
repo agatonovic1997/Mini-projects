@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&display=swap");
+body {
+  overflow-x: hidden;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.container-fluid {
+  background: linear-gradient(to left, rgb(0, 180, 255), rgb(4, 180, 4));
+  background-repeat: no-repeat;
+  height: 100vh !important;
+  width: 100vw !important;
+}
+
+h1 {
+  font-family: "Ballet", cursive !important;
+  font-weight: 700 !important;
+  font-size: 115px !important;
+  color: rgb(100, 0, 140) !important;
+  animation: pulse 2s infinite;
+}
+
+.e {
+  transition: transform 0.5s ease-in-out;
+  transform: rotate(1080deg);
+}
+
+.circle-start {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  transition: 0.8s all ease-in-out;
+}
+.circle-start:hover {
+  background-color: rgb(0, 180, 255) !important;
+  box-shadow: 0 0 8px rgb(100, 0, 140) !important;
+  cursor: pointer;
+}
+.circle-start h2 {
+  color: rgb(0, 0, 0) !important;
+  font-family: "Poppins", sans-serif !important;
+  font-size: 45px;
+  transition: 0.8s all ease-in-out;
+  position: relative;
+}
+.circle-start h2:hover {
+  text-shadow: 0 0 10px rgb(255, 255, 0);
+}
+.circle-start h2:active {
+  top: 3px;
+  left: 3px;
+}
+
+h3 {
+  color: rgb(100, 0, 140) !important;
+  font-family: "Ballet", cursive !important;
+  font-weight: 500 !important;
+  font-size: 50px !important;
+}
+
+.g {
+  border: 3px solid rgb(100, 0, 140) !important;
+}
+
+.time-line {
+  height: 6px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 0 8px #4c75af;
+  position: relative;
+  overflow: hidden;
+}
+
+#progress-bar {
+  width: 0%;
+  height: 100%;
+  border-radius: 10px;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 180, 255);
+  position: absolute;
+  transition: width 0.5s ease;
+  animation: progressAnimation linear;
+}
+
+h4 {
+  color: rgb(2, 2, 100) !important;
+  font-family: "Ballet", cursive !important;
+  font-size: 50px !important;
+  font-weight: 800 !important;
+}
+
+h5 {
+  font-size: 25px !important;
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 900;
+  color: rgb(100, 0, 140) !important;
+}
+
+.box-left,
+.box-play,
+.box-right {
+  background-color: rgb(255, 255, 255);
+  padding: 15px;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgb(100, 0, 140) !important;
+  border: 5px solid rgb(207, 206, 206);
+  cursor: pointer;
+  position: relative;
+}
+.box-left:active,
+.box-play:active,
+.box-right:active {
+  top: 2px;
+  left: 2px;
+}
+
+.start-class {
+  background-color: rgb(4, 180, 4) !important;
+}
+
+.stop-class {
+  background-color: rgb(255, 0, 0) !important;
+}
+
+.blue-class {
+  background-color: rgb(0, 180, 255) !important;
+}
+
+@media (min-width: 768px) {
+  h3 {
+    font-size: 35px;
+  }
+  .circle-start {
+    width: 180px;
+    height: 180px;
+  }
+}
+@media (max-width: 575px) {
+  h1 {
+    font-size: 75px !important;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  .circle-start {
+    width: 160px;
+    height: 160px;
+  }
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes progressAnimation {
+  to {
+    width: 0;
+  }
+}/*# sourceMappingURL=main.css.map */
