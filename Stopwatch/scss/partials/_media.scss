@@ -1,0 +1,22 @@
+@media (max-width:575px) {
+
+    .hours,
+    .minutes,
+    .second {
+        font-size: 85px;
+    }
+
+    .double-dots {
+        color: $yellow-color;
+        font-size: 50px;
+    }
+
+    .h_m_s {
+        font-size: 20px;
+    }
+
+    .right-btn,
+    .left-btn {
+        width: 7rem;
+    }
+}

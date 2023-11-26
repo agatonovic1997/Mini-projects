@@ -1,0 +1,137 @@
+@font-face {
+  font-family: "Old English Text MT";
+  src: local("Old English Text MT"), url("/fonts/7413-fontps.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Tw Cen MT Condensend Extra Bold";
+  src: local("Tw Cen MT Condensend Extra Bold"), url("/fonts/TCCEB.TTF") format("ttf");
+}
+body {
+  background-color: #000000 !important;
+  font-family: "Old English Text MT", sans-serif !important;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.stopwatch {
+  background-color: #161003;
+  box-shadow: 0 0 12px #ffffff;
+  border-radius: 5px;
+}
+
+.flip-rotate {
+  transform: scale(-1) scaleY(-1);
+}
+
+.img-animation {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+.hours,
+.minutes,
+.second {
+  font-size: 135px;
+}
+
+.hours {
+  color: #1a581c;
+}
+
+.minutes {
+  color: #9710a3;
+}
+
+.second {
+  color: #0084ff;
+}
+
+.double-dots {
+  color: #ffff00;
+  font-size: 100px;
+  font-weight: 700;
+}
+
+.h_m_s {
+  font-size: 35px;
+  color: #ffffff;
+  position: relative;
+  top: -25px;
+  font-family: "Tw Cen MT Condensend Extra Bold", sans-serif !important;
+  font-weight: 900;
+}
+
+.hundredth {
+  font-size: 60px;
+  color: #ffffff;
+  transform: translateY(-30%);
+}
+
+.left-btn {
+  transform: translateX(-100%);
+  font-family: "Tw Cen MT Condensend Extra Bold", sans-serif !important;
+  font-weight: 900 !important;
+  border: 2px solid #ffff00 !important;
+  background-color: #000000 !important;
+  width: 10rem;
+}
+.left-btn:hover {
+  color: #0084ff !important;
+}
+
+.right-btn {
+  transform: translateX(100%);
+  font-family: "Tw Cen MT Condensend Extra Bold", sans-serif !important;
+  font-weight: 900 !important;
+  border: 2px solid #ffff00 !important;
+  background-color: #000000 !important;
+  width: 10rem;
+}
+.right-btn:hover {
+  color: #0084ff !important;
+}
+
+hr {
+  background-color: #ffffff;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px) rotate(-1deg);
+  }
+  50% {
+    transform: translateX(5px) rotate(1deg);
+  }
+  75% {
+    transform: translateX(-5px) rotate(-1deg);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@media (max-width: 575px) {
+  .hours,
+  .minutes,
+  .second {
+    font-size: 85px;
+  }
+  .double-dots {
+    color: #ffff00;
+    font-size: 50px;
+  }
+  .h_m_s {
+    font-size: 20px;
+  }
+  .right-btn,
+  .left-btn {
+    width: 7rem;
+  }
+}/*# sourceMappingURL=main.css.map */
