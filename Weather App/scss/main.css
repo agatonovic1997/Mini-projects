@@ -1,0 +1,95 @@
+@font-face {
+  font-family: "Tw Cen MT Condensed";
+  src: url("/font/Tw-Cen-MT-Condensed-Font.ttf") format("truetype");
+}
+body {
+  background-color: rgb(0, 0, 0) !important;
+  font-family: "Tw Cen MT Condensed", sans-serif !important;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.col-xl-8 {
+  padding: 0px !important;
+}
+
+.col-xl-4 {
+  position: relative;
+  z-index: 2;
+}
+
+h1 {
+  font-size: 155px !important;
+  font-weight: 700 !important;
+}
+
+.min-temp {
+  color: rgb(0, 0, 255) !important;
+  font-size: 40px !important;
+  font-weight: 900 !important;
+}
+
+.max-temp {
+  color: rgb(255, 0, 0) !important;
+  font-size: 40px !important;
+  font-weight: 900 !important;
+}
+
+.description {
+  position: relative;
+}
+.description .description-weather {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 80px;
+  color: rgb(45, 255, 45) !important;
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  font-weight: 900;
+}
+
+.row {
+  background-color: rgb(0, 0, 50) !important;
+  box-shadow: 0 0 12px rgb(255, 255, 255) !important;
+}
+
+.row::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 115vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 0;
+}
+
+.wrapper-temperature {
+  border-top: 3px solid rgb(255, 255, 255) !important;
+  border-bottom: 3px solid rgb(255, 255, 255) !important;
+}
+.wrapper-temperature .temperature {
+  color: rgb(255, 255, 255) !important;
+}
+
+.form-control {
+  font-size: 2rem !important;
+  font-weight: 900 !important;
+  background-color: rgb(132, 132, 132) !important;
+}
+
+@media (max-width: 575px) {
+  .description,
+  .description-weather {
+    top: 30% !important;
+    font-size: 40px !important;
+  }
+}/*# sourceMappingURL=main.css.map */
