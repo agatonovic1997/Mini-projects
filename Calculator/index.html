@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="sr-RS">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculator</title>
+
+    <!---------------- MAIN CSS ---------------->
+    <link rel="stylesheet" href="./scss/main.css">
+
+    <!---------------- FAVICON ----------------->
+    <link rel="shortcut icon" href="./img/calculator.png" type="image/x-icon">
+
+    <!------------ IMPORT BOOTSTRAP ------------>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-xl d-flex justify-content-center my-5">
+        <div class="calculator py-5 px-4">
+
+            <!-- OUTPUT-RESLUT -->
+            <div class="flex-column">
+                <img src="./img/microphone.png" alt="" id="toggleImage">
+                <div class="d-flex flex-column">
+                    <textarea class="text-end" id="expressionTextarea" disabled></textarea>
+                    <textarea class="text-end" id="resultTextarea" disabled></textarea>
+                </div>
+            </div>
+            <!-- END-OUTPUT-RESLUT -->
+
+            <!------------------- START - BUTTONS ---------------------->
+            <div class="wrapper-button d-flex justify-content-center pt-4">
+                <div class="col-3 p-3 m-1 text-center d-flex justify-content-center align-items-center gray-color"
+                    onclick="clearTextarea()">C</div>
+                <div class="col-3 p-3 m-1 text-center d-flex justify-content-center align-items-center gray-color"
+                    onclick="toggleSign()">+/-</div>
+                <div class="col-3 p-3 m-1 text-center d-flex justify-content-center align-items-center gray-color"
+                    onclick="appendToTextarea('%')">%</div>
+                <div class="col-3 p-3 m-1 text-center orange-color" onclick="appendToTextarea('/')">÷</div>
+            </div>
+            <div class="wrapper-button d-flex justify-content-center">
+                <div class="col-3 p-3 change-class m-1 text-center d-flex justify-content-center align-items-center"
+                    onclick="appendToTextarea('7')">7</div>
+                <div class="col-3 p-3 change-class m-1 text-center d-flex justify-content-center align-items-center"
+                    onclick="appendToTextarea('8')">8</div>
+                <div class="col-3 p-3 change-class m-1 text-center d-flex justify-content-center align-items-center"
+                    onclick="appendToTextarea('9')">9</div>
+                <div class="col-3 p-3  m-1 text-center orange-color" onclick="appendToTextarea('*')">×</div>
+            </div>
+            <div class="wrapper-button d-flex justify-content-center">
+                <div class="col-3 p-3 change-class m-1 text-center d-flex justify-content-center align-items-center"
+                    onclick="appendToTextarea('4')">4</div>
+                <div class="col-3 p-3 change-class m-1 text-center d-flex justify-content-center align-items-center"
+                    onclick="appendToTextarea('5')">5</div>
+                <div class="col-3 p-3 change-class m-1 text-center d-flex justify-content-center align-items-center"
+                    onclick="appendToTextarea('6')">6</div>
+                <div class="col-3 p-3 m-1 text-center orange-color d-flex justify-content-center align-items-center"
+                    onclick="appendToTextarea('-')">-</div>
+            </div>
+            <div class="wrapper-button d-flex justify-content-center">
+                <div class="col-3 p-3 change-class m-1 text-center d-flex justify-content-center align-items-center"
+                    onclick="appendToTextarea('1')">1</div>
+                <div class="col-3 p-3 change-class m-1 text-center d-flex justify-content-center align-items-center"
+                    onclick="appendToTextarea('2')">2</div>
+                <div class="col-3 p-3 change-class m-1 text-center d-flex justify-content-center align-items-center"
+                    onclick="appendToTextarea('3')">3</div>
+                <div class="col-3 p-3 m-1 text-center orange-color shadow-orange d-flex justify-content-center align-items-center"
+                    onclick="appendToTextarea('+')">+</div>
+            </div>
+            <div class="wrapper-button d-flex justify-content-center">
+                <div class="col-6 p-3 change-class m-1 text-center d-flex justify-content-center align-items-center"
+                    onclick="appendToTextarea('0')">0</div>
+                <div class="col-3 p-3 change-class m-1 d-flex justify-content-center align-items-center"
+                    onclick="appendToTextarea('.')">.</div>
+                <div class="col-3 p-3 m-1 d-flex justify-content-center align-items-center orange-color shadow-orange"
+                    onclick="calculateResult()">=</div>
+            </div>
+            <!------------------- END - BUTTONS ---------------------->
+        </div>
+    </div>
+    <!---------------- MAIN JS ---------------->
+    <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

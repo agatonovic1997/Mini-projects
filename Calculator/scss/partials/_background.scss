@@ -1,0 +1,69 @@
+body {
+    background-color: $black-color !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    user-select: none !important;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 25px 25px 25px 0;
+    background: rgba(255, 255, 255, .6);
+    cursor: pointer;
+}
+
+.calculator {
+    color: $white-color;
+    background-color: $dark-gray-color;
+    border-radius: 45px;
+    box-shadow: 0 0 2px $white-color;
+}
+
+.col-3,
+.col-6 {
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 25px;
+    box-shadow: 0 0 5px $white-color;
+    cursor: pointer;
+    text-shadow: 0 0 2px $black-color;
+}
+
+.orange-color {
+    background-color: $orange-color;
+}
+
+.gray-color {
+    background-color: $gray-color;
+}
+
+.shadow-orange {
+    box-shadow: 0 0 125px $orange-color !important;
+}
+
+textarea {
+    resize: none !important;
+    background-color: $dark-gray-color;
+    border: none;
+    color: $white-color !important;
+    font-size: 25px !important;
+    line-height: 25px !important;
+
+}
+
+#expressionTextarea {
+    color: $black-color !important;
+    font-size: 18px !important;
+    text-shadow: 0 0 2px $white-color;
+    font-style: italic !important;
+}
+
+#resultTextarea{
+    color: $orange-color!important;
+    text-shadow: 0 0 2px $black-color!important;
+    
+}
